@@ -62,11 +62,12 @@ font-family: 'Hammersmith One', sans-serif;
     outline: 0;
 }
 
+
 a {
     text-decoration: none;
 }
 
-body {
+body{
     
 }
 
@@ -100,7 +101,7 @@ p, span{
 
 /* Common Part css end*/
 
-/*  Mwnu part css */
+/*  Mwnu part css Start*/
 
 
 .navbar-light .navbar-nav .nav-link.active {
@@ -119,11 +120,11 @@ p, span{
 .navbar{
     position:fixed;
     width: 100%;
-    z-index:99999;
+    z-index:999999;
 }
 
 .nav-bg-setting{
-transition: all 1s ease;
+transition: all .9s ease;
 background-color: #392972;
 }
 
