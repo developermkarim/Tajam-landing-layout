@@ -1,0 +1,932 @@
+
+
+/* 
+
+
+Bootstrap 5 (update 2021)
+
+As of Bootstrap 5 beta, left and right have been replaced by start and end for RTL support. Therefore the margin utilities changed for Bootstrap 5 beta:
+
+ml-auto => ms-auto (start)
+mr-auto => me-auto (end)
+Also note, all uses of left and right have been replaced with start and end in Bootstrap 5...
+
+ml-* => ms-*
+pl-* => ps-*
+mr-* => me-*
+pr-* => pe-*
+text-left => text-start
+text-right=> text-end
+float-left => float-start
+float-right=> float-end
+border-left => border-start
+border-right=> border-end
+rounded-left => rounded-start
+rounded-right=> rounded-end
+dropleft => dropstart
+dropright=> dropend
+dropdown-menu--left => dropdown-menu--start
+dropdown-menu--right => dropdown-menu--end
+carousel-item-left => carousel-item-start
+carousel-item-right=> carousel-item-end
+
+
+font-family: 'Playfair Display', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Hammersmith One', sans-serif;
+
+
+
+*/
+
+
+/* Teable of CSS Content
+
+ 1. Manu Part
+ 2. Banner part
+ 3. About Part
+ 4. Video Part
+ 5. sevice Part
+ 6, Service item
+ 7, Team part
+ 8.Project part
+
+*/
+
+ /* Common Part css */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+ol,
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+
+    font-family: 'Playfair Display', serif;
+}
+p, span{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Common Part css end*/
+
+/*  Mwnu part css */
+
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: #07cec3;
+}
+ 
+.navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: #07cec3;
+}
+
+.navbar{
+    position:fixed;
+    width: 100%;
+    z-index:99999;
+}
+
+.nav-bg-setting{
+transition: all 1s ease;
+background-color: #392972;
+}
+
+/* .navbar-light .navbar-toggler-icon {
+    background-image: url(../images/Humbergar_menu.svg);
+    color: white;
+    
+} */
+
+/* TOGGLE ICON OPEN */
+
+
+
+/* .open{
+    background-image: url(../images/CloseIcon.svg);
+    color: white;
+}
+ */
+
+
+
+
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid #fff; */
+  }
+  .menu-btn__burger {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before {
+    transform: translateY(-16px);
+  }
+  .menu-btn__burger::after {
+    transform: translateY(16px);
+  }
+  /* ANIMATION */
+  .menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+  }
+
+
+
+
+
+
+
+
+/* TOGGLE ICON OPEN END*/
+
+
+
+
+.navbar-toggler-icon{
+    z-index: 767675564;
+    position: relative;
+}
+
+.navbar-icon div{width: 30px;
+    height: 3px;
+    background-color:rgb(160, 160, 160);
+    margin: 6px 0;}
+/* Menu part css end */
+
+/* Banner part css start */
+#banner-part{
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    
+
+}
+#banner-part::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+   position: absolute;
+   top: 0;
+    left: 0;
+    z-index: ;
+    background-color: rgba(18, 12, 50, 0.8);
+
+}
+.slider-banner{
+    position:relative;
+    z-index:9999;
+}
+
+.slick-dots{
+    text-align: center;
+    list-style: none;
+    position: absolute;
+    top: 90%;
+     
+  
+  }
+  .slick-dots li{
+    position: relative;
+       display: inline-block;
+       margin:6px;
+       background-color:transparent;
+       width: 15px;
+       height: 15px;
+       line-height: 15px;
+       border-radius: 50%;
+       z-index: 99;
+      
+  }
+  .slick-dots li button{
+      position: absolute;
+      top: 0;
+      left: 0;
+      border: none;
+      color:transparent;
+      background-color: transparent;
+      border: 2px solid #07cec3;
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      border-radius: 50%;
+      transition: all .8s ease;
+      
+  }
+  
+  .slider-1 .slick-dots{
+      position:absolute;
+      bottom: 80px;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%);
+  }
+  .slick-dots li.slick-active button{
+      background-color:#07cec3;
+      border: 2px solid #07cec3;
+      
+  }
+.banner-text{
+position:relative;
+padding-top:185px;
+padding-bottom:205px;
+z-index: 999;
+
+}
+
+.banner-text h2{
+    color: white;
+    font-weight: 700;
+    font-size: 42px;
+    position: relative;
+}
+.banner-text h2::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #07cec3;
+    right: 50%;
+    top: 75px;
+    
+}
+.banner-text p{
+    color: white;
+    font-weight: 300;
+    font-size: 17px;
+    padding: 60px 50px 52px 50px;
+}
+.banner-text a{
+    border: 2px solid #07cec3;
+    padding: 15px 22px;
+    color:#07c8c0 !important;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Banner part css end */
+
+/* About Part css */
+
+#about-part{
+    padding:70px 0px;
+}
+.about-text{
+
+}
+.about-text h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #413d4b;
+    
+}
+.about-text p{
+    font-size: 18px;
+    color:#b3b4ba;
+    font-family: 'Roboto', sans-serif;
+}
+.about-p-text{
+
+    padding: 30px 0px;
+}
+
+.about-text a{
+    border: 2px solid #07cec3;
+    padding: 15px 22px;
+    color:#07c8c0 !important;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+
+
+/* About part css end*/
+
+
+
+/* Video Part css */
+
+.image-icon{
+
+    width: 35px;
+    height: 35px;
+  padding-left: 4px;
+  padding-top: 4px;
+}
+ 
+#video-part{
+    background:url(../images/video_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 200px 0px;
+}
+.video-icon{
+    margin: auto;
+ position: relative;
+    z-index: 999;
+ padding: 100px 0px;
+
+}
+#video-part::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(18, 12, 50, 0.8);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.video-icon h3{
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 500;
+
+}
+
+.play-image{
+    width: 65px;
+    height: 65px;
+    border: 3px solid white;
+    border-radius: 50%;
+    line-height: 48px;
+    margin: auto;
+    cursor: pointer;
+}
+/* Video part css end */
+
+/* Service part css */
+
+#service-part{
+padding: 75px 0px;
+
+}
+.service-head h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #413d4b;
+}
+
+.service-head p{
+    font-size: 18px;
+    color:#78777b;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    position: relative;
+}
+.service-head p::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #07cec3;
+    right: 50%;
+    top: 70px;
+    transform: translateX(50%);
+}
+
+/* Service part css end */
+
+/* Service item css start */
+.service-info {
+    padding-top: 120px;
+}
+
+.service-image img{
+    padding-bottom: 35px;
+    cursor: pointer;
+}
+
+.service-info h5{
+
+  
+    padding-bottom: 20px;
+    color: #413d4b;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.service-info p{
+    color: #7a7a7a;
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 300;
+    padding: 0px 50px;
+}
+/* Service item css emd */
+
+ /* Team Part css */
+ #team-part{
+    background: url(../images/team_slider_bg.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    z-index: -999;
+
+ }
+ #team-part::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(18, 12, 50, 0.8);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+ }
+
+ .team-top-header{
+     padding: 50px 0px;
+     z-index: 999;
+     position: relative;
+     color: white;
+
+ }
+ .team-top-header h2{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #413d4b;
+ }
+
+ .team-top-header p{
+    font-size: 18px;
+    color:#78777b;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    position: relative; 
+ }
+
+ .team-top-header p::after{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: #666666;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%);
+ }
+ .card-section{
+     z-index: 999;
+     position: relative;
+     color: white;
+ }
+ .custom-card{
+     background-color: transparent;
+     border: 1px solid rgba(248, 245, 245, 0.856);
+    border-radius: .25rem;
+    text-align: center;
+    margin: 30px 0px;
+ }
+
+ .card-bottom-text{
+    z-index: 999;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding-bottom: 60px;
+ }
+.card-bottom-text p{
+    font-size: 18px;
+    color:#78777b;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+   
+}
+ .card-bottom-text a{
+    border: 2px solid #07cec3;
+    padding: 15px 22px;
+    color:#07c8c0 !important;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+ /* Team Part css end */
+
+ /* Project Part css start */
+ #project-part{
+     padding: 60px 0px;
+ }
+ .project-left{
+
+ }
+ .project-left h3{}
+ .project-right p.icon{
+font-size: 20px;
+   
+ 
+ }
+ .project-right p{
+     
+ }
+ .project-view{
+     padding-top: 60px;
+ }
+ .project-view{}
+ .project-view{}
+
+ .project-more a{
+    border: 2px solid #07cec3;
+    padding: 15px 22px;
+    color:#06bbb3!important;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+    display: inline-block;
+}
+ /* Project Part css end */
+
+
+ /* Review Part CSS */
+ #client-review{
+    background: url(../images/team_bg.jpg);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    padding-top: 40px;
+
+ }
+ #client-review::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(18, 12, 50, 0.8);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+ }
+ .review-text{
+     position:relative;
+     z-index: 9999;
+      color:#ffffff
+ }
+ .review-text i{
+     font-size: 30px;
+     display: inline-block;
+     padding: 25px;
+ }
+ .review-text p{
+     padding: 20px 130px;
+     color:#ccc7c7;
+ }
+ .review-text h4{
+     font-size: 21px;
+     font-weight: 400;
+     padding: 10px 0px;
+ }
+ .review-text h5{
+    font-size: 14px;
+    font-weight: 400;
+    color:#ccc7c7
+ }
+
+ /* Review Part CSS end */
+
+ /* Review Image */
+
+ .img{
+position: relative;
+z-index: 9999;
+padding: 10px;
+margin:0px; width: 75px;
+     height: 75px;
+     display: inline-block;
+     cursor: pointer;
+ }
+
+ .img img{
+    width: 60px;
+     height:60px;
+     border-radius: 50%;
+ }
+
+ .slider-review{
+width: 470px;
+margin: 0 auto;
+padding: 30px;
+ }
+ .slider-text-for{
+     position:relative;
+     z-index:111;
+ }
+ .slider-review{
+    position:relative;
+    z-index:999;
+
+}
+/* Review Image */
+
+/* Slider Arrow Css */
+
+ .team-arrow-left{
+    color: rgb(165, 160, 160);
+    position: absolute;
+    z-index: 45664;
+    top: 80%;
+    left: 32%;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+ .team-arrow-right{
+    color: rgb(145, 143, 143);
+    position: absolute;
+    z-index: 45664;
+    top: 80%;
+    right: 32%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.slick-center .img img{
+    border: 2px solid white;
+    margin-bottom: -5px;
+}
+.slick-center .img{
+    width: 80px;
+    height:75px;
+border-radius:50%;
+transform:scale(1.4) rotate(360deg);
+    transition: 1s all ease;
+    
+}
+.slick-track {
+    padding: 10px;
+   
+}
+.svg-inline--fa{
+    font-size: 28px;
+    vertical-align: 0.875em;
+}
+
+/* Contact Part  Css Start */
+#contact{
+    padding: 40px 0px;
+}
+.form-group{
+    padding-top: 20px;
+}
+.registration h3{
+padding: 15px 0px;
+font-size: 27px;
+color: #3d3d3d;
+font-weight: 500;
+}
+.happy-client h3{
+    padding: 15px 0px;
+
+}
+.submit-btn a{
+    border: 2px solid #07cec3;
+    padding: 10px 25px;
+    color:#07c8c0 !important;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
+.client-with img{
+    padding-top:35px;
+}
+/* Contact Part  Css End */
+
+/* Footer part css start */
+#footer{
+    background: url(../images/footer_bg.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+    padding:50px 0px;
+}
+#footer::after{
+    content: '';
+    position: absolute;
+    background-color: rgba(18, 12, 50, 0.8);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0; 
+}
+
+.footer-all{
+    position: relative;
+    z-index: 234245;
+}
+
+.footer-left p {
+    padding: 15px 29px 0px 0px;
+    color: #d8d8d8;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 27px;
+}
+.footer-middle h5, .footer-right h5{
+    color: #d8d8d8;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 18px 0px 30px 0px;
+}
+.footer-middle h5{
+    padding-left: 50px;
+}
+.icon-text p{
+    position: relative;
+    z-index: 234324;
+    color: #d8d8d8;
+    padding-bottom:10px;
+    padding-left: 45px;
+}
+
+.icon-text p span {
+    padding: 7px 3px 2px 10px;
+    font-size: 14px;
+    color: #d8d8d8;
+}
+.custom-form input{
+background: none;
+color: #d8d8d8;
+}
+.custom-form button{
+    padding: -20px, 20px;
+}
+.icon-text p svg {
+    font-size: 28px;
+    padding-top: 11px;
+}
+.footer-right ul li{
+    padding-right: 23px;
+}
+
+.footer-right ul li  a {
+    text-decoration: none !important;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:10%;
+    margin-right: 0px;
+    font-size: 15px;
+    overflow: hidden;
+    position: relative;
+    color:#d8d8d8;
+    transition: all .8s;
+    border: 1px solid #d8d8d8;
+}
+.footer-right ul li  a:hover{
+    border: none;
+    transform: rotate(360deg) scale(1.2);
+}
+
+.footer-last{
+    position: relative;
+    z-index: 2342;
+    padding-top: 40px;
+    
+}
+.footer-last ul li{
+    padding-right: 25px;
+}
+.footer-last ul li a{
+    color: #ccc7c7;
+
+}
+.copyright{
+    position: relative;
+    z-index: 555;
+    color: #ccc7c7;
+}
+/* Footer part css end */
+
+/*  type css */
+
+/*Add custom cursor so it auto inherits font styles*/
+.typed::after {
+	content: '|';
+	display: inline;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+
+/*Removes cursor that comes with typed.js*/
+.typed-cursor{
+   opacity: 0;
+	display: none;
+}
+/*Custom cursor animation*/
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/* Back To Top Scroll  */
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    bottom: 20px;
+    right: 20px;
+    width: 64px;
+    height: 64px;
+    z-index: 9999;
+    cursor: pointer;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    background-image: url(../images/about-removebg-preview.png);
+    background-repeat: no-repeat;
+   }
+   
+   .back-to-top:hover{
+    opacity: 0.8;
+   }
+
+/* Back To Top Scroll  End  */

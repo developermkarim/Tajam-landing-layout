@@ -1,0 +1,214 @@
+ /* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    .navbar-collapse {
+      
+        text-align: center;
+       
+    }
+
+    
+
+    .banner-text {
+        padding-top: 120px;
+        padding-bottom: 102px;
+        padding-right: 18px;
+    }
+    .banner-text h2{
+        font-size: 32px;
+    }
+    .banner-text h2::after {
+       
+        display: none;
+    }
+ }
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .navbar-nav {
+        text-align: center;
+        background-color: #392972;
+    }
+    .banner-text {
+        padding-top: 120px;
+        padding-bottom: 102px;
+        padding-right: 18px;
+    }
+
+    .banner-text h2::after {
+       
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+   
+    .about-text h2 {
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #413d4b;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    .about-text a {
+       width: 100%;
+       text-align: center;
+    }
+    
+    .service-info {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 455px){
+    .service-head p::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 3px;
+            background-color: #07cec3;
+            right: 50%;
+            top: 100px;
+            padding-bottom: 15px;
+            transform: translateX(50%);
+        }
+
+        .review-text p {
+            padding: 10px 30px;
+            
+        }
+
+        .team-arrow-left {
+            visibility: hidden;
+        }
+
+        .team-arrow-right {
+            visibility: hidden;
+        }
+        
+        }
+        
+        @media (max-width: 768px){
+            
+            .team-top-header p::after {
+
+                top: 100px;
+                
+            }
+            .card-bottom-text {
+                z-index: 999;
+                position: relative;
+                color: white;
+                text-align: center;
+                padding-bottom: 60px;
+                padding-top: -40px;
+            }
+            .review-text p {
+                padding: 20px 30px;
+               
+            }
+
+            .team-arrow-left {
+                color: rgb(187, 187, 187);
+                top: 84%;
+                left: 6%;
+                font-size: 15px;
+                cursor: pointer;
+            }
+
+            .team-arrow-right {
+                color: rgb(187, 187, 187);
+                top: 83%;
+                 right: 6%;
+                font-size: 15px;
+                cursor: pointer;
+            }
+
+            .haapy-client h3 {
+                padding-top: 20px;
+            }
+
+            .footer-middle {
+                /* text-align: start; */
+                /* padding-right: 38px; */
+                margin-left: -46px;
+                padding-top: 20px;
+            }
+
+            .copyright {
+               text-align:left !important;
+               padding-top: 19px;
+
+            }
+
+            .footer-all {
+                padding: 8px 39px;
+            }
+
+            .footer-last { 
+                padding-top: 40px;
+                padding-left: 38px;
+            }
+
+            
+
+
+        }
+/* // Medium devices (tablets, 768px and up)     
+.about-text h2 {
+	font-size: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #413d4b;
+	text-align: center;
+	padding-top: 30px;
+}*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .navbar-nav {
+        text-align: center;
+        background-color: #392972;
+    }
+
+    .banner-text {
+        padding-top: 120px;
+        padding-bottom: 102px;
+        padding-right: 18px;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px){
+    .menu-btn{
+        display: none;
+    }
+} 
+
+@media (min-width: 992px){} and (max-width: 1199.98px) { }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {  }
+
+
+
+
+
+
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+/* @media (max-width: 575.98px) { ... } */
+/*  */
+/* // Small devices (landscape phones, less than 768px) */
+/* @media (max-width: 767.98px) { ... } */
+/*  */
+/* // Medium devices (tablets, less than 992px) */
+/* @media (max-width: 991.98px) { ... } */
+/*  */
+/* // Large devices (desktops, less than 1200px) */
+/* @media (max-width: 1199.98px) { ... } */
+/*  */
+/* // X-Large devices (large desktops, less than 1400px) */
+/* @media (max-width: 1399.98px) { ... } */
